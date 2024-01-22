@@ -4,9 +4,10 @@ services:
         container_name: dsm
         image: vdsm/virtual-dsm:latest
         environment:
-            DISK_SIZE: "16G"
-            RAM_SIZE: "1G"
+            DISK_SIZE: "2G"
+            RAM_SIZE: "500M"
             CPU_CORES: "1"
+            UUURL:    "Test"
         devices:
             - /dev/kvm
         device_cgroup_rules:
